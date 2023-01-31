@@ -3,7 +3,7 @@ import time
 import datetime
 
 
-b3m = serial.Serial('COM6', baudrate=115200,
+b3m = serial.Serial('COM4', baudrate=115200,
                     parity=serial.PARITY_NONE, timeout=0.5)
 
 
@@ -36,7 +36,7 @@ def setup():
     reData = B3M_Write_CMD(0x00, 0x08, 0x28)
     time.sleep(0.5)
     ################################################
-    print('セットアップ完了')
+    # print('セットアップ完了')
 
 
 def B3M_Write_CMD(servo_id, TxData, Address):

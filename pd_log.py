@@ -6,8 +6,8 @@ import shutil
 import matplotlib.pyplot as plt
 
 if __name__ == '__main__':
-    p = 10
-    d = 0
+    p = 20
+    d = 5
     setup()
 
     omega_log = []
